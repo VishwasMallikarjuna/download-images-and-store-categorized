@@ -5,6 +5,10 @@ const (
 	breedImageFormat = "https://dog.ceo/api/breed/%s/images/random"
 )
 
+type BreedsResponse struct {
+	Message map[string][]string `json:"message"`
+}
+
 func main() {
 
 }
