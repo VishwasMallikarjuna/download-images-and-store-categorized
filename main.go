@@ -10,5 +10,5 @@ type BreedsResponse struct {
 }
 
 func main() {
-
+	breeds, err := getAllBreeds()
 }
