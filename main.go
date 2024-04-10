@@ -16,8 +16,11 @@ type BreedsResponse struct {
 }
 
 func main() {
-	breeds, err := getAllBreeds()
-	fmt.Println(breeds, err)
+	breeds, _ := getAllBreeds()
+	//fmt.Println(breeds, err)
+	for k, _ := range breeds {
+		fmt.Println(k)
+	}
 }
 
 func getAllBreeds() (map[string][]string, error) {
