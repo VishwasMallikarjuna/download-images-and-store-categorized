@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 )
 
@@ -17,7 +16,7 @@ type BreedsResponse struct {
 
 func main() {
 	breeds, err := getAllBreeds()
-	fmt.Println(breeds, err)
+	//fmt.Println(breeds, err)
 }
 
 func getAllBreeds() (map[string][]string, error) {
